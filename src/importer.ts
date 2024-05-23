@@ -1,6 +1,13 @@
+// Import mastodon
 import Mastodon from 'mastodon-api'
+
+// FIle and other Nodejs stuff
 const fs = require('node:fs');
+
+// Env Variables
 require('dotenv').config();
+
+// TWitter Profile
 
 const M = new Mastodon({
   access_token: process.env.Token,
