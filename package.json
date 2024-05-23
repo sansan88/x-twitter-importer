@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "mastodon-api": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12"
   }
 }
