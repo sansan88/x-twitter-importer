@@ -15,6 +15,7 @@ const M = new Mastodon({
   api_url: 'https://mastodon.social/api/v1/', // optional, defaults to https://mastodon.social/api/v1/
 });
 
+// https://docs.joinmastodon.org/methods/statuses/#create
 M.post('media', { file: fs.createReadStream('path/to/image.png') }).then(resp => {
     const id = resp.data.id;
     M.post('statuses', { status: '#selfie', media_ids: [id] })
